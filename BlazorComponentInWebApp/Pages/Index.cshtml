@@ -1,0 +1,10 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<h2>This is from Parent Page </h2>
+<script src="~/_framework/blazor.server.js"></script>
+
+<div> @(await Html.RenderComponentAsync<BlazorComponentDemo>(RenderMode.Static, new { Message = "CHLOE" }))</div>
